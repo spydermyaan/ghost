@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Roboto:ital,wght@1,400;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(70deg, #242d49 50%, #3eb0cb 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  height: 80vh;
+  background: #fff;
+  background: linear-gradient(295deg, #242d49 60%, #539ee4 60%);
+  box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2),
+    0 -10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ptr {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  padding: 4rem 6rem;
+}
+
+.nav__left,
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 6rem;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Ma Shan Zheng", cursive;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  transform: rotateZ(-8deg);
+}
+
+.nav__links {
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 0.4rem;
+}
+
+.nav__links:hover {
+  border-bottom: 2px solid #242d49;
+}
+
+.user__details {
+  display: inline-block;
+  margin: 0 1.4rem;
+}
+
+.fa-user-circle {
+  font-size: 2rem;
+}
+
+.fa-chevron-down {
+  color: #3eb0cb;
+}
+
+.fa-shopping-cart {
+  position: relative;
+}
+
+.cart__indicator {
+  position: absolute;
+  top: -10px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  font-size: small;
+  text-align: center;
+  background-color: #539ee4;
+  /* box-shadow: 0 0 10px 1px #fff, 0 0 10px 1px rgb(134, 114, 114); */
+  animation: pulse 2s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+.cart {
+  position: relative;
+}
+
+.cart__details {
+  position: absolute;
+  top: 100;
+  left: -300%;
+  width: 140px;
+  height: 40vh;
+  border-radius: 0.4rem;
+  background: #6f899f;
+  box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2),
+    0 -10px 10px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  display: none;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  margin: auto;
+}
+
+.product__image img {
+  width: 500px;
+}
+
+.product__details {
+  max-width: 40%;
+  /* margin: auto; */
+}
+
+.product__title {
+  font-size: 16rem;
+  font-weight: bolder;
+}
+
+.product__head {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #539ee4 25%, #6f899f 25%);
+  margin: 1rem auto;
+}
+
+.product__desc {
+  color: #bbb;
+}
+
+.footer {
+  width: 90%;
+  height: 20%;
+  margin: auto;
+  border-radius: 0.6rem;
+  box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2),
+    0 -10px 10px 0 rgba(0, 0, 0, 0.19);
+  background: #313c5c;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.4rem;
+}
+
+.footer__title {
+  color: #777;
+  font-weight: 400;
+  margin: 2rem;
+}
+
+button {
+  font-weight: 700;
+  width: 10.6rem;
+  height: 4rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0px 0px rgba(0, 0, 0, 0.19);
+  background-color: #313c5c;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.colors,
+.quantity {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.quantity {
+  margin: 0 1rem;
+}
+
+.quantity:last-child {
+  background-color: #313c5c;
+}
+
+.active {
+  background-color: #539ee4;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: #3eb0cb;
+}
+
+.btn-primary {
+  width: 24rem;
+  height: 10rem;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  align-self: center;
+  background-color: #3eb0cb;
+}

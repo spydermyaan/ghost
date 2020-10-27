@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>GHOST</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <header class="header">
+          <nav class="nav__left">
+            <h1 class="logo ptr">GHOST<i class="fab fa-snapchat-ghost"></i></h1>
+            <a href="#" class="ptr nav__links">Shop</a>
+            <a href="#" class="ptr nav__links">Lifestyle</a>
+            <a href="#" class="ptr nav__links">Loyalty</a>
+          </nav>
+          <nav class="nav__right">
+            <div class="user">
+              <i class="fas fa-user-circle user__details user__avatar ptr"></i>
+              <div class="user__details user__name ptr">
+                Aashish Sunuwar
+                <i class="user__details fas fa-chevron-down ptr"></i>
+              </div>
+            </div>
+
+            <div class="cart ptr">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart__indicator">3</span>
+              <div class="cart__details">Shopping List</div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="product">
+          <div class="product__image">
+            <img src="./images/product.webp" alt="" />
+          </div>
+          <div class="product__details">
+            <h1 class="product__title">SIZE</h1>
+            <h2 class="product__subtitle">Muscle Builder</h2>
+            <h3 class="product__head">
+              Product Info<span style="color: #bbb; margin-left: 2rem"
+                >Nutritional Facts</span
+              >
+            </h3>
+            <div class="bar"></div>
+            <p class="product__desc">
+              New school meets old school,clinically dosed,packed to the
+              nines,transparent AF,muscle builder conceived to make gains faster
+              than photoshop.Add to GHOST Legend® or Whey for added gains/more
+              life.
+            </p>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="flavors">
+            <h3 class="footer__title">Flavors</h3>
+            <button class="active">
+              <div class="colors neutral"></div>
+              <h3 class="footer__title">Neutral</h3>
+            </button>
+            <div class="colors red"></div>
+            <div class="colors green"></div>
+          </div>
+          <div class="payment__type">
+            <h3 class="footer__title">Payment Type</h3>
+            <button class="active">$29.99</button>
+            <button>5000 Points</button>
+          </div>
+          <size>
+            <h3 class="footer__title">Payment Type</h3>
+            <button class="active">60 Tablets</button>
+            <button>120 Tablets</button>
+          </size>
+          <quantity>
+            <h3 class="footer__title">Quantity</h3>
+            <button class="active quantity">+</button>
+            02
+            <button class="quantity">-</button>
+          </quantity>
+          <button class="btn-primary">
+            <i class="fas fa-shopping-cart"></i>
+            Add To Cart
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
