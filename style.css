@@ -194,6 +194,7 @@ a {
 }
 
 button {
+  cursor: pointer;
   font-weight: 700;
   width: 10.6rem;
   height: 4rem;
